@@ -13,7 +13,7 @@ class Naklad {
 			$this->text,
 		]));
 
-		\Katu\Utils\Tmp::set($this->hash, [
+		\Katu\Utils\Tmp::set(['onus', $this->hash], [
 			'original' => $this->original,
 			'level'    => $this->level,
 			'text'     => $this->text,
