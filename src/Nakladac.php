@@ -13,7 +13,7 @@ class Nakladac {
 		$text = preg_replace('#["„“]#', null, $this->original);
 		$level = $this->level;
 
-		$text = mb_ereg_replace_callback('#\b(\w+)\b#u', function($i) use($level) {
+		$text = preg_replace_callback('#\b(\w+)\b#u', function($i) use($level) {
 			$word = $i[1];
 			if (rand(1, $level) == 1) {
 				return '„' . $word . '“';
