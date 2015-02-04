@@ -12,12 +12,6 @@ class Naklad {
 			$this->level,
 			$this->text,
 		]));
-
-		\Katu\Utils\Tmp::set(['onus', $this->hash], [
-			'original' => $this->original,
-			'level'    => $this->level,
-			'text'     => $this->text,
-		]);
 	}
 
 }
